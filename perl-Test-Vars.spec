@@ -1,15 +1,15 @@
 %define upstream_name    Test-Vars
-%define upstream_version 0.001
+%define upstream_version 0.005
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%perl_convert_version 0.005
+Release:	1
 
 Summary:	Detects unused variables
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Test/Test-Vars-0.005.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(B)
@@ -51,3 +51,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Mon Mar 29 2010 cpan2dist 0.001-1mdv
 - initial mdv release, generated with cpan2dist
+
