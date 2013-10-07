@@ -12,6 +12,7 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Test/Test-Vars-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires: perl(Module::Build)
 BuildRequires:	perl(B)
 BuildRequires:	perl(ExtUtils::MakeMaker)
 BuildRequires:	perl(Test::More)
