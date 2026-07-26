@@ -1,15 +1,13 @@
 %define upstream_name    Test-Vars
-%define upstream_version 0.017
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.017
+Release:	2
 
 Summary:	Detects unused variables
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/houseabsolute/p5-Test-Vars
-Source0:	https://cpan.metacpan.org/authors/id/J/JK/JKEENAN/Test-Vars-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/J/JK/JKEENAN/Test-Vars-%{version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires: perl(Module::Build)
@@ -23,7 +21,7 @@ BuildArch:	noarch
 Test::Vars finds unused variables in order to keep the source code tidy.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Build.PL installdirs=vendor
